@@ -7,8 +7,8 @@ spring:
     name: wallet-service
   datasource:
     url: jdbc:postgresql://localhost:5432/walletdb
-    username: user
-    password: s3cr3t
+    username: postgres
+    password: root
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:

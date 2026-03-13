@@ -1,6 +1,7 @@
 package com.rs.payments.wallet.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -17,6 +18,7 @@ public class CreateUserRequest {
     private String username;
 
     @NotBlank
+    @Email
     @Schema(description = "Email address of the user", example = "john.doe@example.com")
     private String email;
 }
